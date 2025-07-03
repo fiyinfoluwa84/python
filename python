@@ -1,0 +1,50 @@
+# Data Type Identification: Create four variables, one each for age, height, name, and whether you're a student. Print the type of each variable.
+Age=34
+Height=2
+Name='Adeniyi Fiyinfoluwa'
+Student=str(input("Are you a Student?:"))
+print(type(Age))
+print(type(Height))
+print(type(Name))
+
+# Function Creation Question: Write a function called greet_user(name) that returns a welcome message.
+name = "Fiyinfoluwa"
+def greet_user(name):
+    return f"You are welcomed, {name}!"
+print(greet_user(name))
+
+# Mini Login System (Input + Conditions) Question: Ask the user to enter a username and password.
+ If the username is "admin" and the password is "1234", print "Login successful"; otherwise, print "Access denied".
+
+username=input("user should kindly enter his or her username:")
+password=input("user should kindly enter his or her password:")
+if username =="admin" and password == "1234":
+    print("Login Successful")
+else:
+    print("Access Denied")
+
+# Basic Calculator (Functions + Conditions) Question: Build a calculator that can add, subtract, multiply, or divide two numbers based on user input.
+def add(a,b):
+    return a+b
+def subtract(a,b):
+    return a-b
+def multiply(a,b):
+    return a*b
+def divide(a,b):
+    return a/b
+a=float(input("Enter the value of a:"))
+b=float(input("Enter the value of b:"))
+a*b
+print(subtract(1,3))
+
+# Age Categorizer Question: Ask the user to enter their age and print the category:0–12: Child, 13–19: Teen, 20–64: Adult, 65+: Senior
+age=int(input("Enter your age:"))
+if age <= 12:
+    print(f"you are a child")
+elif age <=19:
+    print(f"you are a Teen")
+elif age <=64:
+    print(f" you are an Adult")
+else :
+    print(f" you are a Senior")
+
